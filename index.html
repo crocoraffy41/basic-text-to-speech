@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea {
+            resize: none;
+            width: 300px;
+        }
+
+        button {
+            padding: 10px 20px;
+            width: 160px;
+            cursor: pointer;
+        }
+
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>basic text-to-speech in romanian and others...</h2>
+        <textarea id="inpVal" cols="40" rows="7" placeholder="Write something..."></textarea><br>
+        <button onclick="speak()">Speak</button>
+        <select id="languageSelect">
+            <option value="ro-RO">romanian (default)</option>
+            <option value="en-US">english</option>
+            <option value="de-DE">german</option>
+            <option value="fr-FR">french</option>
+            <option value="ru-RU">russian</option>
+        </select>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
